@@ -1,1 +1,13 @@
 
+// ==== 1. variables and data types ====
+let fullName = "Najma Abdirahman";  // string
+const age = 22;   // number
+var isEnrolled = true;   // boolean
+
+console.log(fullName, typeof fullName);  // Najma Abdirahman string
+console.log(age, typeof, age);   //22 number
+console.log(isEnrolled ,typeof isEnrolled);   //true boolean
+
+// ===== 2. operators and type coercion ====
+const str = "10";
+const num = 5;
