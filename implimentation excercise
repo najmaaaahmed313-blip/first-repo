@@ -1,0 +1,5 @@
+// ==== 1. variables and data types ====
+let fullName = "Najma Abdirahman";
+const age = 22;
+var isEnrolled = true;
+console.log
