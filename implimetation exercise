@@ -47,3 +47,7 @@ case 8:
 case 7:
 console.log(`score ${finalScore}: Grade C`);
 break;
+case6:
+ console.log(`score ${finalScore}: Grade D`);
+default:
+ console.log(`score ${finalScore}: Grade F`);}
