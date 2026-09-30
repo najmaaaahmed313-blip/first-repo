@@ -1,0 +1,52 @@
+Explain the differences between var, let, and const in JavaScript regarding variable scope, hoisting, and reassignment.
+ans.
+  var is a function-scoped variable, and when it is declared inside a function, it will only be available within that function.
+    code example;
+    function greetUser() {
+      var message ="hello masha!";
+      console.log(message);
+    }
+      
+  let and const are block-scoped; they exist inside the exact set of curly braces{} where they're already written.
+    code example;
+      let status = "logged out";
+       if (true) {
+         let status = "logged in"
+         console.log (status);
+       }
+
+  var is hoisted with a default value of "undefined"=during compilation phase; all declarations move to the top of their scope.
+    It automatically initializes the default value of undefined.
+    code example;
+    var username = "najma"
+    console.log(username);
+
+ let is hoisted but uninitialized(temporal dead zone) =when entering a let declaration in a block, 
+  JavaScript registers the variable name in memory, unlike var.
+   where it doesn't attach any value to it.
+      code example;
+       console.log(role);
+         let role = "admin";
+          console.log(role);
+ const is hoisted but uninitialised(temporal dead zone) =when a block containing a const is declared,
+ the name is registered in memory. Leaving it completely uninitialised!
+  code example;
+    console.log(maxUsers);
+     const maxUsers = 100;
+    console.log (maxUsers);
+
+ var and let are allowed to reassign because their values tend to change over time,
+   whereas const is designed to lock a variable binding so that it can never point to a new memory address or a new value!
+   code example;
+     const user = { name: "Alice" };
+       user.name ="Bob";
+       user = { name: "Sahara" };
+
+var is allowed to be redeclared due to how JavaScript was originally designed in 1995(to be a forgiving language).
+ Whereas let and const are not allowed to be redeclared to prevent silent bugs and accidental overwrites.
+  code example;
+   var username = "rahma";
+   var username = "brian";
+ 
+    
+     
