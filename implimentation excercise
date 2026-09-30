@@ -1,5 +1,56 @@
 // ==== 1. variables and data types ====
-let fullName = "Najma Abdirahman";
-const age = 22;
-var isEnrolled = true;
-console.log
+let fullName = "Najma Abdirahman";  // string
+const age = 22;   // number
+var isEnrolled = true;   // boolean
+
+console.log(fullName, typeof fullName);  // Najma Abdirahman string
+console.log(age, typeof, age);   //22 number
+console.log(isEnrolled ,typeof isEnrolled);   //true boolean
+
+// ===== 2.operators and type coersion ====
+const str = "10";
+const num = 5;
+
+console.log(str + num)  //"105"  -> + coerces the number to a string(concatenation)
+console.log(str * num)  // 15  -> * coerces the strimg to a number (math)
+
+// ===== 3.if...else if...else =====
+const actualAge = 30;
+
+if (actualAge < 10) {
+console.log("Free admission");}
+else if (actualAge <= 20){
+console.log("Child discount");}
+else if (actualAge <= 60) {
+console.log(Final price);}
+else {
+console.log("Lumpsum discount);}
+
+// ====4.Ternary Operator ====
+const balance =-30;
+const status = balance <0 ? 'account Overdrawn" : "account Active";
+console.log(status)  // account overdrawn
+
+// === 5. Comprehensive Challenge ====
+const.examScore = 98;
+const bonus = 5;
+const finalScore =Math.min(examScore) + bonus, 100;   //cap at 100
+
+//divide by 10 and round down so that each grade range becomes one case
+switch (Math.floor(finalScore / 10){
+case 10:
+case 9:
+   console.log(`score ${finalScore}: Grade A`);
+   break;
+case 8:
+ console.log(`score ${finalScore}: Grade B`);
+ break;
+case 7:
+console.log(`score ${finalScore}: Grade C`);
+break;
+case6:
+ console.log(`score ${finalScore}: Grade D`);
+default:
+ console.log(`score ${finalScore}: Grade F`);}
+
+
