@@ -42,11 +42,19 @@ ans.
        user.name ="Bob";
        user = { name: "Sahara" };
 
-var is allowed to be redeclared due to how JavaScript was originally designed in 1995(to be a forgiving language).
- Whereas let and const are not allowed to be redeclared to prevent silent bugs and accidental overwrites.
-  code example;
-   var username = "rahma";
-   var username = "brian";
- 
-    
+      2nd Question 
+
+What are the primitive data types available in JavaScript, and how do they fundamentally differ from reference types like arrays and objects?
+ANS;
+a)The primitive types are 7:
+string,number,boolean,undefined,null,bigint,symbol.
+b) 1.storage and copying-a primitive variable holds the value itself,so copyingmakes an independent copy.
+ code example;
+let a = 5;
+let b = a;
+b = 10;   // a is still 5
+2.mutability primitive
+
+
+
      
