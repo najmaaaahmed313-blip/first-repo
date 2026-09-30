@@ -25,3 +25,25 @@ else if (actualAge <= 60) {
 console.log(Final price);}
 else {
 console.log("Lumpsum discount);}
+// ====4.Ternary Operator ====
+const balance =-30;
+const status = balance <0 ? 'account Overdrawn" : "account Active";
+console.log(status)  // account overdrawn
+
+// === 5. Comprehensive Challenge ====
+const.examScore = 98;
+const bonus = 5;
+const finalScore =Math.min(examScore) + bonus, 100;   //cap at 100
+
+//divide by 10 and round down so that each grade range becomes one case
+switch (Math.floor(finalScore / 10){
+case 10:
+case 9:
+   console.log(`score ${finalScore}: Grade A`);
+   break;
+case 8:
+ console.log(`score ${finalScore}: Grade B`);
+ break;
+case 7:
+console.log(`score ${finalScore}: Grade C`);
+break;
