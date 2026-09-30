@@ -11,3 +11,17 @@ console.log(isEnrolled ,typeof isEnrolled);   //true boolean
 // ===== 2. operators and type coercion ====
 const str = "10";
 const num = 5;
+console.log(str + num)  //"105"  -> + coerces the number to a string(concatenation)
+console.log(str * num)  // 15  -> * coerces the strimg to a number (math)
+
+// ===== 3.if...else if...else =====
+const actualAge = 30;
+
+if (actualAge < 10) {
+console.log("Free admission");}
+else if (actualAge <= 20){
+console.log("Child discount");}
+else if (actualAge <= 60) {
+console.log(Final price);}
+else {
+console.log("Lumpsum discount);}
